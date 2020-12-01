@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shopify", "Shopify", "{3B3D8AD5-E758-47BA-9E26-CB250A4261E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ST.ShopifyCrawler", "ST.ShopifyCrawler\ST.ShopifyCrawler.csproj", "{09F05BAA-57D1-4D61-9027-9DAA3F1AA338}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09F05BAA-57D1-4D61-9027-9DAA3F1AA338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F05BAA-57D1-4D61-9027-9DAA3F1AA338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F05BAA-57D1-4D61-9027-9DAA3F1AA338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F05BAA-57D1-4D61-9027-9DAA3F1AA338}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{09F05BAA-57D1-4D61-9027-9DAA3F1AA338} = {3B3D8AD5-E758-47BA-9E26-CB250A4261E1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0329B2D-2D98-444A-82D1-97BF6393084E}
+	EndGlobalSection
+EndGlobal

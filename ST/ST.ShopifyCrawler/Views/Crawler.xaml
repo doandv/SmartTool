@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="ST.ShopifyCrawler.Views.Crawler"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST.ShopifyCrawler.Views"
+        mc:Ignorable="d"
+        Height="960" Width="1000">
+    <Grid>
+        <TextBlock Height="43" HorizontalAlignment="Left" Margin="27,0,0,0" Name="toolName" Text="500level.com" VerticalAlignment="Top" Width="400"  FontSize="25" Foreground="#1395a3"/>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="37,109,0,0" Name="fileUploadTextBlock" Text="File Input:" VerticalAlignment="Top" Width="108"  FontSize="15"/>
+        <TextBox Height="28" HorizontalAlignment="Left" Margin="145,104,0,0" Name="fileUploadTextBox" VerticalAlignment="Top" Width="458" FontSize="15"/>
+        <Button Content="Select file" Height="31" HorizontalAlignment="Left" Margin="629,104,0,0" Name="btnOpenFileUpload" VerticalAlignment="Top" Width="96" Background="#eb7f00" BorderBrush="#eb7f00"/>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" Margin="27,275,25,10"  Background="LightGray" Name="MessageStackView">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Name="MessageStackPanel">
+                <TextBlock x:Name="textMessageTotal" Width="907" Height="26" Margin="10,0,0,0" Foreground="Green" FontSize="15"/>
+                <TextBlock x:Name="textMessage" Width="944" Height="261" FontSize="15"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Button Content="Run" Height="38" HorizontalAlignment="Left" Margin="145,196,0,0" Name="btnOpenFile" VerticalAlignment="Top" Width="228"  Background="#eb7f00" BorderBrush="#eb7f00"/>
+    </Grid>
+</UserControl>
