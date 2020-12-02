@@ -32,24 +32,6 @@ namespace ST.ShopifyCrawler
             this.DataContext = menuItem;
         }
 
-        //private void MenuSelected(object sender, MouseButtonEventArgs e)
-        //{
-        //    TextBlock textClick = (TextBlock)sender;
-        //    if (textClick.Text == "Crawler")
-        //    {
-        //        _context.SwichScreen(new Crawler());
-        //    }
-        //    else if (textClick.Text == "Setting")
-        //    {
-        //        _context.SwichScreen(new Setting());
-        //    }
-        //    else if (textClick.Text == "Support")
-        //    {
-        //        _context.SwichScreen(new Setting());
-        //    }
-        //    //textClick.Background = SolidColorBrush.OpacityProperty;
-        //}
-
         private void MenuSelected(object sender, MouseButtonEventArgs e)
         {
             ListViewItem menuItem = e.Source as ListViewItem;
@@ -59,15 +41,15 @@ namespace ST.ShopifyCrawler
                 var menuName = menuItem.Content.ToString();
                 if (menuName == "Crawler")
                 {
-                    _context.SwichScreen(menuName, new Crawler());
+                    _context.SwichScreen(menuName, new Crawler(_context));
                 }
                 else if (menuName == "Setting")
                 {
-                    _context.SwichScreen(menuName, new Setting());
+                    _context.SwichScreen(menuName, new Setting(_context));
                 }
                 else if (menuName == "Support")
                 {
-                    _context.SwichScreen(menuName, new Setting());
+                    _context.SwichScreen(menuName, new Setting(_context));
                 }
             }
         }

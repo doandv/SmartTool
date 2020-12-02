@@ -27,9 +27,9 @@ namespace ST.ShopifyCrawler
         {
             InitializeComponent();
 
-            var menuCrawler = new ShopifyMenuItem("Crawler", new Crawler(), PackIconKind.TextBoxSearch);
-            var menuSetting = new ShopifyMenuItem("Setting", new Crawler(), PackIconKind.Settings);
-            var menuSupport = new ShopifyMenuItem("Support", new Crawler(), PackIconKind.HelpCircleOutline);
+            var menuCrawler = new ShopifyMenuItem("Crawler", new Crawler(this), PackIconKind.TextBoxSearch);
+            var menuSetting = new ShopifyMenuItem("Setting", new Setting(this), PackIconKind.Settings);
+            var menuSupport = new ShopifyMenuItem("Support", new Setting(this), PackIconKind.HelpCircleOutline);
 
             // add to menu
             Menu.Children.Add(new UserControlMenuItem(menuCrawler, this));

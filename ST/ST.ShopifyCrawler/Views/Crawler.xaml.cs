@@ -20,9 +20,21 @@ namespace ST.ShopifyCrawler.Views
     /// </summary>
     public partial class Crawler : UserControl
     {
-        public Crawler()
+        MainWindow _context;
+
+        public Crawler(MainWindow context)
         {
             InitializeComponent();
+            _context = context;
+        }
+
+        private void Window_Minimize(object sender, MouseButtonEventArgs e)
+        {
+            _context.WindowState = WindowState.Minimized;
+        }
+        private void Window_Close(object sender, MouseButtonEventArgs e)
+        {
+            _context.Close();
         }
     }
 }

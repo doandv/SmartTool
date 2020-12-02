@@ -20,9 +20,20 @@ namespace ST.ShopifyCrawler.Views
     /// </summary>
     public partial class Setting : UserControl
     {
-        public Setting()
+        MainWindow _context;
+        public Setting(MainWindow context)
         {
             InitializeComponent();
+            _context = context;
+        }
+
+        private void Window_Minimize(object sender, MouseButtonEventArgs e)
+        {
+            _context.WindowState = WindowState.Minimized;
+        }
+        private void Window_Close(object sender, MouseButtonEventArgs e)
+        {
+            _context.Close();
         }
     }
 }

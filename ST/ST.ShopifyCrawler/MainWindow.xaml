@@ -24,7 +24,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="326*"/>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Background="#1395a3">
                 <TextBlock Text="SHOPIFY CRAWLER" Padding="20 12" Foreground="White" FontSize="22" FontWeight="DemiBold" Background="#0f5c65"/>
@@ -33,7 +33,7 @@
                 <StackPanel x:Name="Menu" Margin="10"/>
             </ScrollViewer>
             <Grid Grid.Row="2" Background="#1395a3">
-                <TextBlock Text="Copyright @ 2020 - SmartTool" Padding="20 15" Foreground="White" FontSize="16" Background="#0f5c65"/>
+                <TextBlock Text="Copyright @ 2020 SmartTool" Padding="20 10" Foreground="White" FontSize="16" Background="#0f5c65"/>
             </Grid>
         </Grid>
         <StackPanel x:Name="StackPanelMain" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch"/>
