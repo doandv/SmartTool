@@ -8,7 +8,8 @@
         mc:Ignorable="d"
         Title="Shopify Crawler" Height="650" Width="1220"
         WindowStartupLocation="CenterScreen"
-        WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="False"
+        ResizeMode="NoResize" AllowsTransparency="False"
+        WindowStyle="None"
         Icon="./Resources/Icon/App.png"
         >
     <Grid>

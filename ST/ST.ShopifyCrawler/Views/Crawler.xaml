@@ -20,32 +20,32 @@
             <materialDesign:PackIcon Kind="WindowClose" Width="20" Height="20" Margin="914,12,0,0" Foreground="Gray" RenderTransformOrigin="16.924,0.594" MouseLeftButtonDown="Window_Close"/>
         </Grid>
         <Grid Grid.Row="1" Background="#eaeaea">
-            <RadioButton Margin="100,-3,762,505" IsChecked="True">Search URL</RadioButton>
-            <RadioButton Margin="243,-3,648,505" RenderTransformOrigin="-0.181,0.447">URLs File</RadioButton>
+            <RadioButton x:Name="rbSearchUrl" Margin="100,-3,762,505" IsChecked="True">Search URL</RadioButton>
+            <RadioButton x:Name="rbFilePath" Margin="243,-3,648,505">File Path</RadioButton>
 
             <TextBlock HorizontalAlignment="Left" Text="Link Crawl" VerticalAlignment="Top" Height="26" Width="100" Margin="10,52,0,0"/>
-            <TextBox x:Name="linkCrawlTxt" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="831" Margin="100,47,0,0" Background="White" Padding="5" BorderBrush="Gray" BorderThickness="1"/>
+            <TextBox x:Name="txtLinkCrawl" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="831" Margin="100,47,0,0" Background="White" Padding="5" BorderBrush="Gray" BorderThickness="1"/>
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Page (From-To)" VerticalAlignment="Top" Height="35" Width="131" Margin="10,89,0,0" />
-            <TextBox x:Name="pageFromTxt" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="59" Margin="100,83,0,0" Background="White" Padding="5" BorderBrush="Gray" BorderThickness="1"/>
-            <TextBox x:Name="pageToTxt" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="63" Margin="212,83,0,0" Background="White" Padding="5" BorderBrush="Gray" BorderThickness="1"/>
+            <TextBox x:Name="txtPageFrom" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="59" Margin="100,83,0,0" Background="White" Padding="5" BorderBrush="Gray" BorderThickness="1"/>
+            <TextBox x:Name="txtPageTo" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="63" Margin="212,83,0,0" Background="White" Padding="5" BorderBrush="Gray" BorderThickness="1"/>
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="-" VerticalAlignment="Bottom" Margin="183,0,0,451" Height="24" Width="24" RenderTransformOrigin="3.616,3.912"/>
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Output Folder" VerticalAlignment="Top" Height="35" Width="131" Margin="10,122,0,0" RenderTransformOrigin="0.282,-0.543"/>
-            <TextBox x:Name="folderOutputTxt" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="C:\Users\PC-DOAN\Desktop" VerticalAlignment="Top" Width="528" Margin="100,117,0,0" Background="White" BorderBrush="Gray" BorderThickness="1"/>
-            <materialDesign:PackIcon Kind="DotsHorizontal" Width="35" Height="26" Margin="633,117,0,0" Foreground="Gray" MouseLeftButtonDown="Window_Close" BorderBrush="Gray" BorderThickness="1"/>
+            <TextBox x:Name="txtFolderOutput" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="C:\Users\PC-DOAN\Desktop" VerticalAlignment="Top" Width="528" Margin="100,117,0,0" Background="White" BorderBrush="Gray" BorderThickness="1"/>
+            <Button Content="..." Height="26" HorizontalAlignment="Left" Margin="633,117,0,0" x:Name="selectFolderOutput" VerticalAlignment="Top" Width="33" Background="#eaeaea" BorderBrush="Gray" Click="btnSelectOuputFolder_Click" Padding="0" FontSize="16" FontWeight="ExtraBold" Foreground="Black"/>
 
             <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="FileName" VerticalAlignment="Top" Height="35" Width="54" Margin="769,122,0,0" RenderTransformOrigin="0.87,0.371"/>
-            <TextBox x:Name="fileOutputTxt" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Width="103" Margin="828,117,0,0" Background="White" BorderBrush="Gray" BorderThickness="1"/>
+            <TextBox x:Name="txtFileOutput" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Width="103" Margin="828,117,0,0" Background="White" BorderBrush="Gray" BorderThickness="1"/>
 
             <ScrollViewer HorizontalScrollBarVisibility="Auto" Margin="10,227,25,10"  Background="AliceBlue" Name="MessageStackView">
                 <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Name="MessageStackPanel">
-                    <TextBlock x:Name="textMessageTotal" Width="906" Height="42" Margin="10,0,0,0" Foreground="Green" FontSize="15"/>
-                    <TextBlock x:Name="textMessage" Width="944" Height="261" FontSize="15"/>
+
                 </StackPanel>
             </ScrollViewer>
-            <Button Content="Run" Height="38" HorizontalAlignment="Left" Margin="100,171,0,0" Name="btnOpenFile" VerticalAlignment="Top" Width="107"  Background="#eb7f00" BorderBrush="#eb7f00"/>
-            <Button Content="Run" Height="38" HorizontalAlignment="Left" Margin="232,171,0,0" x:Name="btnOpenFile_Copy" VerticalAlignment="Top" Width="107"  Background="Gray" BorderBrush="Gray"/>
+            <Button Content="Run" Height="38" HorizontalAlignment="Left" Margin="100,171,0,0" Name="btnRun" VerticalAlignment="Top" Width="107"  Background="#eb7f00" BorderBrush="#eb7f00" Click="btnRun_Click"/>
+            <Button Content="Stop" Height="38" HorizontalAlignment="Left" Margin="232,171,0,0" x:Name="btnStop" VerticalAlignment="Top" Width="107"  Background="Gray" BorderBrush="Gray" Click="btnStop_Click"/>
+
         </Grid>
         <Grid Grid.Row="2" Background="White">
             <TextBlock Text="Copyright @ 2020 SmartTool" Padding="20 10" Foreground="White" FontSize="16" Background="#0f5c65"/>
